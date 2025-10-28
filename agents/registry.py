@@ -1,11 +1,12 @@
 from typing import Any, Dict, Callable
 
-from . import chat_basic, chat_react, summarizer
+from . import chat_basic, chat_react, summarizer, categorizer
 
 _REGISTRY: Dict[str, Callable[[], Any]] = {
     "chat-basic": chat_basic.build_agent,
     "chat-react": chat_react.build_agent,
     "summarizer": summarizer.build_agent,
+    "categorizer": categorizer.build_agent,
 }
 
 
