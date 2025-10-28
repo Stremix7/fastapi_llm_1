@@ -9,11 +9,7 @@ def build_agent():
         [
             (
                 "system",
-                "You are an expert analyst that assigns scientific and technical documents to rich topical categories. "
-                "Given the provided content, identify the most relevant primary domain, list notable subdomains, "
-                "enumerate specific technical topics or methods, and mention potential applications or audiences. "
-                "Respond in valid JSON with the keys: primary_domain (string), subdomains (list of strings), "
-                "key_topics (list of strings), applications (list of strings), and notes (string).",
+                "Ты — эксперт-аналитик, распределяющий научные и технические документы по обширным тематическим категориям. На основе предоставленного контента определи наиболее релевантный основной домен, перечисли значимые поддомены, перечисли конкретные технические темы или методы, а также укажи потенциальные области применения или аудитории, где они могут быть использованы. Предоставь корректный JSON-файл с ключами: primary_domain (строка), subdomains (список строк), key_topics (список строк), applications (список строк) и notes (строка)."
             ),
             ("human", "{input}"),
         ]
